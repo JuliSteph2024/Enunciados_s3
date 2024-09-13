@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Divisible entre 3 o 5</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Ingrese un número entero:"));
+
+        if (numero % 3 === 0 && numero % 5 === 0) {
+            alert (numero + " es divisible entre 3 y 5.")
+            for(let i=3; i<=numero; i+=3) {
+                document.write(i + " es un número divisible entre 3. <br>");
+            }
+            for(let i=5; i<=numero; i+=5) {
+                document.write(i + " es un número divisible entre 5. <br>");
+            }
+        } else if (numero % 3 === 0) {
+            alert(numero + " es divisible entre 3.")
+            for(let i=3; i<=numero; i+=3) {
+                document.write(i + " es un número divisible entre 3. <br>");
+            }
+        } else if (numero % 5 === 0) {
+            alert(numero + " es dividible entre 5.")
+            for(let i=5; i<=numero; i+=5) {
+                document.write(i + " es un número divisible entre 5. <br>");
+            }
+        } else {
+            alert(numero + " no es un número divisible entre 3 o 5.")
+        }
+    </script>
+</body>
+</html>
